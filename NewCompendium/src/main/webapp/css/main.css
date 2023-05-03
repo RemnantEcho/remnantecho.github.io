@@ -16,7 +16,9 @@ html, body {
 @media only screen and (orientation:portrait) {
 	body {
 		height: 100vw;
-		transform: rotate(90deg);
+		width: 100vh;
+		transform: rotate(90deg) translate(0, -100vw);
+    	transform-origin: top left;
 	}
 }
 
@@ -359,7 +361,7 @@ button:focus {
 }
 
 .triangle-collapse {
-
+	
 }
 
 .triangle-lm-home {
@@ -406,7 +408,7 @@ button:focus {
 }
 
 .mid-label-triangle:hover {
-
+	
 }
 
 #sidebar-comp-btn-container {
@@ -440,7 +442,7 @@ button:focus {
 }
 
 #sidebar-linkedin-container {
-
+	
 }
 
 #sidebar-bg-container {
@@ -463,7 +465,7 @@ button:focus {
 }
 
 #sidebar-email-btn:hover {
-
+	
 }
 
 #sidebar-github-btn {
@@ -491,7 +493,6 @@ button:focus {
 	justify-content: center;
 	display: inline-block;
 	text-align: center;
-	vertical-align: middle;
 }
 
 .bot-icon-expand {
@@ -524,7 +525,6 @@ button:focus {
 	position: relative;
 	overflow: hidden;
 	transition: width .8s;
-	vertical-align: middle;
 }
 
 .tooltip-style {
@@ -540,11 +540,11 @@ button:focus {
 .bot-tooltip-expand {
 	/* width: 15.0rem; */
 	width: 22.25rem;
-
+	
 }
 
 .bot-tooltip-collapse {
-	width: 0;
+	width: 0; 
 }
 
 .bot-tooltip-collapse {
@@ -834,7 +834,7 @@ button:focus {
 }
 
 .project-tile-expand {
-
+	
 	background-size: cover;
 }
 
@@ -942,7 +942,7 @@ button:focus {
 
 .project-desc-container-expanded {
 	height: 38rem;
-
+    
 }
 
 .project-desc-border {
@@ -1413,7 +1413,7 @@ button:focus {
 	height: 100%;
 	width: 80%;
 	float: left;
-
+	
 }
 
 .comp-content-iframe {

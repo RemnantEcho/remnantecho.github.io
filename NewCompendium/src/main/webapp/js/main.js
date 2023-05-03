@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var selectedCompTabID = null;
 	
 	var projectArray = null;
+	var isHorizontal = true;
 	
 	class Project {
 		constructor(title, category, date, image, video, github, download, infoText, setupText, thoughtsText) {
@@ -829,7 +830,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	}
 	
 	function slideAnimate(position) {
-		var newMargin = (position * $(window).height() + 0) + 'px';
+		var newMargin = 0;
+		if (isHorizontal) {
+			newMargin = (position * $(window).height() + 0) + 'px';
+		}
+		else {
+			newMargin = (position * $(window).width() + 0) + 'px';
+		}
 			
 		if (!isSliding) {
 			isSliding = true;
@@ -1480,8 +1487,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		screen.orientation.lock(orientation);
 	}
 	
+	const checkOrientation = () => {
+		var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+		var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		if (vw < vh) {
+			isHorizontal = false;
+		}
+		else {
+			isHorizontal = true;
+		}
+	}
+	
 	const init = () => {
 		//lockScreen('landscape');
+		checkOrientation();
+		
+		window.addEventListener('resize', function(event) {
+			checkOrientation();
+		}, true);
 		
 		var lastScrollTop = 0;
 		
