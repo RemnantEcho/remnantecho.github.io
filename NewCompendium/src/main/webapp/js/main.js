@@ -818,8 +818,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			try {
 				if (compMainFrame != null) {
 					if (compMainFrame.src != 'comp-pages/start.html') {
-						
-						compMainFrame.contentWindow.setNightMode(isNightMode);
+						compMainFrame.contentWindow.setNightMode(isNightMode, false);
 					}
 				}
 			}
@@ -1919,7 +1918,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		
 		compMainFrame.addEventListener('load', function() {
 			try {
-				compMainFrame.contentWindow.setNightMode(isNightMode);
+				compMainFrame.contentWindow.setNightMode(isNightMode, true);
 			}
 			catch (err) {
 				console.log(err);
@@ -1948,7 +1947,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}
@@ -1979,7 +1978,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}
@@ -2010,7 +2009,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}
@@ -2041,7 +2040,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}
@@ -2072,7 +2071,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}
@@ -2103,7 +2102,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							selectedCompTabID = this.id;
 							
 							compMainFrame.src = 'comp-pages/' + this.id + ".html";
-							compMainFrame.contentWindow.setNightMode(isNightMode);
+							compMainFrame.contentWindow.setNightMode(isNightMode, true);
 						}
 						
 					}

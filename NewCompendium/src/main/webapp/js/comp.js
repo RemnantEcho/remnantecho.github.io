@@ -1,4 +1,5 @@
 var isNightMode = false;
+var isLoading = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 	var contentContainer = document.querySelector('#content');
@@ -26,12 +27,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		contentBoxes[index].addEventListener('mouseenter', function() {
 			if (tocItems.length > 0) {
+				tocList.classList.remove('mute-ani');
 				for (let i = 0; i < tocItems.length; ++i) {
 					if ($(this).hasClass(i)) {
 						if (isNightMode) {
+							tocItems[i].classList.remove('mute-ani');
 							tocItems[lastFocused].classList.remove('toc-item-active-dm');
 							tocItems[lastFocused].classList.remove('toc-item-active-lm');
 							tocItems[i].classList.add('toc-item-active-dm');
+							
 						}
 						else {
 							tocItems[lastFocused].classList.remove('toc-item-active-lm');
@@ -62,7 +66,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							scrollTop: newScrollTop + 'px'
 						}, 800);
 						console.log('Clicked:' + i);
+						tocList.classList.remove('mute-ani');
 						if (isNightMode) {
+							tocItems[i].classList.remove('mute-ani');
 							tocItems[lastFocused].classList.remove('toc-item-active-dm');
 							tocItems[lastFocused].classList.remove('toc-item-active-lm');
 							tocItems[i].classList.add('toc-item-active-dm');
@@ -77,32 +83,62 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					}
 				}
 			});
+			
+			tocItems[index].addEventListener('mouseenter', function() {
+				for (let i = 0; i < tocItems.length; ++i) {
+					if ($(this).hasClass(i)) {
+						tocList.classList.remove('mute-ani');
+						if (isNightMode) {
+							tocItems[i].classList.remove('mute-ani');
+						}
+						break;
+					}
+				}
+			});
 		}
 	}
 
-	window.setNightMode = function(night) {
+	window.setNightMode = function(night, onLoad) {
 		isNightMode = night;
-
-		console.log('Night Changing');
+		isLoading = onLoad;
 
 		if (isNightMode) {
+			
+			if (onLoad) contentContainer.classList.add('mute-ani');
+			if (!onLoad) contentContainer.classList.remove('mute-ani');
+			
 			if (tocItems.length > 0) {
+				if (onLoad) {
+					for (let i = 0; i < tocItems.length; ++i) {
+						tocItems[i].classList.add('mute-ani');
+					}
+				}
+				
 				tocItems[lastFocused].classList.remove('toc-item-active-dm');
 				tocItems[lastFocused].classList.remove('toc-item-active-lm');
 				tocItems[lastFocused].classList.add('toc-item-active-dm');
+				
 			}
+			if (onLoad) tocList.classList.add('mute-ani');
 			tocList.classList.remove('toc-list-lm');
 			tocList.classList.add('toc-list-dm');
 
 			body.classList.remove('text-lm');
 			body.classList.add('text-dm');
+			
+			
 		}
 		else {
+			contentContainer.classList.remove('mute-ani');
 			if (tocItems.length > 0) {
+				for (let i = 0; i < tocItems.length; ++i) {
+					tocItems[i].classList.remove('mute-ani');
+				}
 				tocItems[lastFocused].classList.remove('toc-item-active-dm');
 				tocItems[lastFocused].classList.remove('toc-item-active-lm');
 				tocItems[lastFocused].classList.add('toc-item-active-lm');
 			}
+			tocList.classList.remove('mute-ani');
 			tocList.classList.remove('toc-list-dm');
 			tocList.classList.add('toc-list-lm');
 
