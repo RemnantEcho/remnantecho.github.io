@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- stylesheets -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet">
+		
+		<style>
+			@font-face {
+				font-family: "Lato";
+				src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+			}
+			
+			html, body {
+				position: relative;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				background-color: transparent;
+				font-size: 1.4225vw;
+				transition: color .8s;
+			}
+			
+			.content::-webkit-scrollbar {
+				display: none;
+			}
+			
+			.content {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 100%;
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+				overflow: hidden;
+				overflow-y: scroll;
+			}
+			
+			.content-box {
+				height: 500px;
+				width: 100%;
+				margin: 0;
+				padding: 1rem;
+				font-size: 1.0rem;
+			}
+			
+			.content-title {
+				font-size: 2.0rem;
+			}
+			
+			.code-block {
+				background-color: #282c34;
+			}
+			
+			.toc-bar {
+				position: absolute;
+				z-index: 10;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+			
+			.toc-list {
+				list-style: none;
+				margin: 0;
+				padding: 1rem;
+				direction: rtl;
+			}
+			
+			.toc-item {
+				transition: color .8s, font-size .8s;
+				text-align: right;
+			}
+			
+			.toc-item:hover {
+				cursor: pointer;
+			}
+			
+			.toc-item-active-lm {
+				color: #ffd162;
+				font-size: 1.5rem;
+			}
+			
+			.toc-item-active-dm {
+				color: #de5f00;
+				font-size: 1.5rem;
+			}
+			
+			.text-lm {
+				color: #000;
+			}
+		
+			.text-dm {
+				color: #fff;
+			}
+			
+			.toc-bar-lm {
+				border-right: 3px solid #ffd162;
+			}
+			
+			.toc-bar-dm {
+				border-right: 3px solid #de5f00;
+			}
+			
+			.comp-dm-style {
+				background-color: #de5f00;
+			}
+			
+			.comp-lm-style {
+				background-color: #ffd162;
+			}
+		</style>
+		
+		<!-- scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<title>Website</title>
+	</head>
+	<body>
+		<div id="content" class="content">
+			<div class="content-box 0">
+				<h1 class="content-title">Introduction</h1>
+				<p>Select a topic in the Sidebar to the left.</p>
+			</div>
+			<div class="content-box 1">
+				<h1 class="content-title">Installation</h1>
+				<p>Select a topic in the Sidebar to the left.</p>
+			</div>
+	
+		</div>
+		<div id="toc-bar" class="toc-bar toc-bar-lm">
+			<ul id="toc-list" class="toc-list"></ul>
+		</div>
+	
+		<script>
+			var isNightMode = false;
+			
+			document.addEventListener("DOMContentLoaded", function(event) {
+				var contentContainer = document.querySelector('#content');
+				var contentBoxes = document.querySelectorAll('.content-box');
+				var tocBar = document.querySelector('#toc-bar');
+				var tocList = document.querySelector('#toc-list');
+				var tocItems = [];
+				var outputText = document.querySelector('#output');
+				var output2Text = document.querySelector('#output2');
+				var lastSTVal = 0;
+				var scrollingDown = false;
+				var lastFocused = 0;
+				var body = document.getElementsByTagName('body')[0];
+					
+				for (let index = 0; index < contentBoxes.length; ++index) {
+					var titleEl = $(contentBoxes[index]).find('.content-title');
+					var title = titleEl[0].innerHTML;
+						
+					if (index == 0) {
+						tocList.innerHTML += '<li class="toc-item toc-item-active-lm ' + index + ' ">' + title + '</li>'
+					}
+					else {
+						tocList.innerHTML += '<li class="toc-item ' + index + '">' + title + '</li>';
+					}
+						
+					contentBoxes[index].addEventListener('mouseenter', function() {
+						if (tocItems.length > 0) {
+							for (let i = 0; i < tocItems.length; ++i) {
+								if ($(this).hasClass(i)) {
+									if (isNightMode) {
+										tocItems[lastFocused].classList.remove('toc-item-active-dm');
+										tocItems[lastFocused].classList.remove('toc-item-active-lm');
+										tocItems[i].classList.add('toc-item-active-dm');
+									}
+									else {
+										tocItems[lastFocused].classList.remove('toc-item-active-lm');
+										tocItems[lastFocused].classList.remove('toc-item-active-dm');
+										tocItems[i].classList.add('toc-item-active-lm');
+									}
+									lastFocused = i;
+									break;
+								}
+							}
+						}
+					});
+				}
+				tocItems = document.querySelectorAll('.toc-item');
+				if (tocItems.length > 0) {
+					for (let index = 0; index < tocItems.length; ++index) {
+						tocItems[index].addEventListener('click', function() {
+							for (let i = 0; i < tocItems.length; ++i) {
+								if ($(this).hasClass(i)) {
+									var newScrollTop = contentBoxes[i].offsetTop;
+									var scrollMax = contentContainer.scrollHeight - contentContainer.clientHeight;
+									if (newScrollTop > scrollMax) {
+										newScrollTop = scrollMax
+										console.log('true');
+									}
+										
+									$(contentContainer).animate({
+										scrollTop: newScrollTop + 'px'
+										}, 800);
+										console.log('Clicked:' + i);
+										if (isNightMode) {
+											tocItems[lastFocused].classList.remove('toc-item-active-dm');
+											tocItems[lastFocused].classList.remove('toc-item-active-lm');
+											tocItems[i].classList.add('toc-item-active-dm');
+										}
+										else {
+											tocItems[lastFocused].classList.remove('toc-item-active-lm');
+											tocItems[lastFocused].classList.remove('toc-item-active-dm');
+											tocItems[i].classList.add('toc-item-active-lm');
+										}
+									lastFocused = i;
+									break;
+								}
+							}
+						});
+					}
+				}
+				
+				window.setNightMode = function (night) {
+				    isNightMode = night;
+				    
+				    console.log('Night Changing');
+				    
+				    if (isNightMode) {
+				    	if (tocItems.length > 0) {
+				    		tocItems[lastFocused].classList.remove('toc-item-active-dm');
+							tocItems[lastFocused].classList.remove('toc-item-active-lm');
+							tocItems[lastFocused].classList.add('toc-item-active-dm');
+				    	}
+				    	tocBar.classList.remove('toc-bar-lm');
+				    	tocBar.classList.add('toc-bar-dm');
+				    	
+				    	body.classList.remove('text-lm');
+				    	body.classList.add('text-dm');
+				    }
+				    else {
+				    	if (tocItems.length > 0) {
+				    		tocItems[lastFocused].classList.remove('toc-item-active-dm');
+							tocItems[lastFocused].classList.remove('toc-item-active-lm');
+							tocItems[lastFocused].classList.add('toc-item-active-lm');
+				    	}
+				    	tocBar.classList.remove('toc-bar-dm');
+				    	tocBar.classList.add('toc-bar-lm');;
+				    	
+				    	body.classList.remove('text-dm');
+				    	body.classList.add('text-lm');
+				    }
+				}
+				
+				window.getNightMode = function (night) {
+					console.log(night);
+				}
+				
+				setNightMode(false);
+			});
+		</script>
+	</body>
+</html>

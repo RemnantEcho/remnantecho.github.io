@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- stylesheets -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+	
+<link rel="stylesheet" href="./css/main.css">
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/main.js"></script>
+
+<title>New Compendium</title>
+
+</head>
+<body>
+	<div id="body-container" class="container-fluid">
+		<div class="row full-height">
+			<!-- sidebar -->
+			<div id="sidebar-container" class="home-lm-style colourable universal">
+				<div id="sidebar-top">
+					<div id="sidebar-collapse-btn-container" class="row center-components">
+						<button id="sidebar-btn-box" class="sidebar-btn">
+							<svg id="sidebar-collapse-btn" class="" viewBox="0 0 50 50">
+								<rect id="collapse-btn-1" class="collapse-btn" x="21" y="5" width="9" height="9"
+									style="fill:white"></rect>
+								<rect id="collapse-btn-2" class="collapse-btn" x="21" y="21" width="9" height="9"
+									style="fill:white"></rect>
+								<rect id="collapse-btn-3" class="collapse-btn" x="21" y="37" width="9" height="9"
+									style="fill:white"></rect>
+							</svg>
+						</button>
+					</div>
+					<div id="sidebar-dn-btn-container" class="row center-components">
+						<button id="daynight-icon" class="sidebar-btn sun"></button>
+
+					</div>
+				</div>
+				<div id="sidebar-mid-container" class="row">
+					<div id="mid-center">
+						<div id="mid-bar"></div>
+						<div id="sidebar-home-btn-container" class="mid-container diamond-expand full-mid-container">
+							<div class="diamond-center row">
+								<div id="home-icon" class="diamond mid-click tab-btn"></div>
+							</div>
+							<div class="mid-label-container">
+								<div id="home-label" class="mid-label home-lm-style colourable home-id mid-click">
+									<p class="label-pad">HOME</p>
+								</div>
+								<div class="mid-label-triangle triangle-lm-home colourable triangle home-id"></div>
+							</div>
+						</div>
+						<div id="sidebar-project-btn-container" class="mid-container diamond-expand full-mid-container">
+							<div class="diamond-center row">
+								<div id="project-icon" class="diamond mid-click tab-btn"></div>
+							</div>
+							<div class="mid-label-container">
+								<div id="project-label" class="mid-label project-lm-style colourable project-id mid-click">
+									<p class="label-pad">PROJECTS</p>
+								</div>
+								<div
+									class="mid-label-triangle triangle-lm-project colourable triangle project-id"></div>
+							</div>
+						</div>
+						<div id="sidebar-about-btn-container" class="mid-container diamond-expand full-mid-container">
+							<div class="diamond-center row">
+								<div id="about-icon" class="diamond mid-click tab-btn"></div>
+							</div>
+							<div class="mid-label-container">
+								<div id="about-label" class="mid-label about-lm-style colourable about-id mid-click">
+									<p class="label-pad">ABOUT</p>
+								</div>
+								<div
+									class="mid-label-triangle triangle-lm-about colourable triangle about-id"></div>
+							</div>
+						</div>
+						<div id="sidebar-comp-btn-container" class="mid-container diamond-expand full-mid-container">
+							<div class="diamond-center row">
+								<div id="comp-icon" class="diamond mid-click tab-btn"></div>
+							</div>
+							<div class="mid-label-container">
+								<div id="comp-label" class="mid-label comp-lm-style colourable comp-id mid-click">
+									<p class="label-pad">COMPENDIUM</p>
+								</div>
+								<div class="mid-label-triangle triangle-lm-comp colourable triangle comp-id"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar-bot">
+					<div id="sidebar-social-container">
+					
+						<div id="sidebar-email-container" class="mid-container bot-icon-expand">
+							<div id="sidebar-email-btn-container" class="row center-components bot-center">
+								<button id="sidebar-email-btn" class="sidebar-btn social-btn"></button>
+							</div>
+					
+							<div id="email-tooltip-container" class="tooltip-container social-tooltip-container">
+								<div class="tooltip-triangle colourable"></div>
+								<div id="email-tooltip" class="sidebar-tooltip tooltip-style colourable">
+									
+									<p id="email-tooltip-text" class="tooltip-text">jly097@outlook.com</p>
+								</div>
+							</div>
+						</div>
+						
+						<div id="sidebar-github-container" class="mid-container bot-icon-expand">
+							<div id="sidebar-github-btn-container" class="row center-components bot-center">
+								<button id="sidebar-github-btn" class="sidebar-btn social-btn"></button>
+							</div>
+					
+							<div id="github-tooltip-container" class="tooltip-container social-tooltip-container">
+								<div class="tooltip-triangle colourable"></div>
+								<div id="github-tooltip" class="sidebar-tooltip tooltip-style colourable">
+									
+									<p class="tooltip-text">RemnantEcho</p> 
+								</div>
+							</div>
+						</div>
+						
+						<div id="sidebar-linkedin-container" class="mid-container bot-icon-expand">
+							<div id="sidebar-linkedin-btn-container" class="row center-components bot-center">
+								<button id="sidebar-linkedin-btn" class="sidebar-btn social-btn"></button>
+							</div>
+					
+							<div id="linkedin-tooltip-container" class="tooltip-container social-tooltip-container">
+								<div class="tooltip-triangle colourable"></div>
+								<div id="linkedin-tooltip" class="sidebar-tooltip tooltip-style colourable">
+									
+									<p class="tooltip-text">James Ly</p>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div id="sidebar-bg-container">
+						<div id="sidebar-bgcredits-container" class="mid-container bot-icon-expand">
+							<div id="sidebar-bgcredits-btn-container" class="row center-components bot-center">
+								<button id="sidebar-bgcredits-btn" class="sidebar-btn"></button>
+							</div>
+					
+							<div id="bgcredits-tooltip-container" class="tooltip-container">
+								<div class="tooltip-triangle colourable"></div>
+								<div id="bgcredits-tooltip" class="sidebar-tooltip tooltip-style colourable">
+									
+									<p id="bgcredits-tooltip-text" class="tooltip-text"></p>
+								</div>
+							</div>
+						</div>
+<!-- 						<div id="footer" class="">2022</div> -->
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Content -->
+			<div id="maincontent-container" class="col-11">
+				<div id="carousel">
+				
+					<!-- Home Carousel -->
+					<div id="home-carousel" class="carousel-slides colourable">
+						<div id="home-carousel-bg" class="bg-id colourable"></div>
+						<div id="home-carousel-container" class="slide-container row center-components slide-item js-scroll home-id">
+							<div class="home-mid-box row center-components home-lm-style home-id colourable">
+							<div class="mid-padder home-id">
+								<h1 class="home-title home-lm-style colourable center-components home-id">WELCOME</h1>
+								<p class="home-desc home-lm-style colourable home-id">A Website Dedicated to Coding Projects</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Project Carousel -->
+					<div id="project-carousel" class="carousel-slides colourable">
+					<div id="project-carousel-bg" class="bg-id colourable"></div>
+					<svg id="project-bg-svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 2438 1440">
+						<path fill-rule="evenodd" clip-rule="evenodd" fill="none" class="colourable project-id" d="M211,786h43v43l-53,53h-43v-43L211,786z M104,893h43v43l-53,53H51v-43L104,893z M196,888h-43v43l58,58h43v-43L196,888z 
+						M31,723h-43v43l121,121h43v-43L31,723z M1974,1247v-43h43l53,53v43h-43L1974,1247z M2081,1354v-43h43l53,53v43h-43L2081,1354z M2076,1262v43h43l58-58v-43h-43L2076,1262z M1911,1427v43h43l121-121v-43h-43L1911,1427z
+						M-61,1267h43v43l-53,53h-43v-43L-61,1267z M-168,1374h43v43l-53,53h-43v-43L-168,1374z M-76,1369h-43v43l58,58h43v-43L-76,1369z M-241,1204h-43v43l121,121h43v-43L-241,1204z M1653,1267h43v43l-53,53h-43v-43L1653,1267z
+						M1546,1374h43v43l-53,53h-43v-43L1546,1374z M1638,1369h-43v43l58,58h43v-43L1638,1369z M1473,1204h-43v43l121,121h43v-43L1473,1204z M691,1267h43v43l-53,53h-43v-43L691,1267z M584,1374h43v43l-53,53h-43v-43L584,1374z
+						M676,1369h-43v43l58,58h43v-43L676,1369z M512,1204h-43l-1,43l121,121h43v-43L512,1204z M191,1427v43h-43l-53-53v-43h43L191,1427z M84,1320v43H41l-53-53v-43h43L84,1320z M89,1412v-43H46l-58,58v43h43L89,1412z 
+						M254,1247v-43h-43L90,1325v43h43L254,1247z M1905,1427v43h-43l-53-53v-43h43L1905,1427z M1798,1320v43h-43l-53-53v-43h43L1798,1320z M1803,1412v-43h-43l-58,58v43h43L1803,1412z 
+						M1968,1247v-43h-43l-121,121v43h43L1968,1247z M1264,1407h-43v-43l53-53h43v43L1264,1407z M1371,1300h-43v-43l53-53h43v43L1371,1300z M1279,1305h43v-43l-58-58h-43v43L1279,1305z 
+						M1444,1470h43v-43l-121-121h-43v43L1444,1470z M303,1407h-43v-43l53-53h43v43L303,1407z M410,1300h-43v-43l53-53h43v43L410,1300z M318,1305h43v-43l-58-58h-43v43L318,1305z M483,1470h43v-43l-121-121h-43v43L483,1470z 
+						M-178,926h-43v-43l53-53h43v43L-178,926z M-71,819h-43v-43l53-53h43v43L-71,819z M-163,824h43v-43l-58-58h-43v43L-163,824z M2,989h43v-43L-76,825h-43v43L2,989z M211,1198h43v-43l-53-53h-43v43L211,1198z 
+						M104,1091h43v-43l-53-53H51v43L104,1091z M196,1096h-43v-43l58-58h43v43L196,1096z M31,1261h-43v-43l121-121h43v43L31,1261z M943,1427v43h-43l-53-53v-43h43L943,1427z M836,1320v43h-43l-53-53v-43h43L836,1320z
+						M841,1412v-43h-43l-58,58v43h43L841,1412z M1006,1247v-43h-43l-121,121v43h43L1006,1247z M1172,1407h43v-43l-53-53h-43v43L1172,1407z M1065,1300h43v-43l-53-53h-43v43L1065,1300z 
+						M1157,1305h-43v-43l58-58h43v43L1157,1305z M992,1470h-43v-43l121-121h43v43L992,1470z M2226,786h-43v43l53,53h43v-43L2226,786z M2333,893h-43v43l53,53h43v-43L2333,893z M2241,888h43v43l-58,58h-43v-43L2241,888z 
+						M2406,723h43v43l-121,121h-43v-43L2406,723z M2615,926h43v-43l-53-53h-43v43L2615,926z M2508,819h43v-43l-53-53h-43v43L2508,819z M2600,824h-43v-43l58-58h43v43L2600,824z M2435,989h-43v-43l121-121h43v43L2435,989z
+						M2226,1198h-43v-43l53-53h43v43L2226,1198z M2333,1091h-43v-43l53-53h43v43L2333,1091z M2241,1096h43v-43l-58-58h-43v43L2241,1096z M2406,1261h43v-43l-121-121h-43v43L2406,1261z 
+						M2246,1427v43h43l53-53v-43h-43L2246,1427z M2353,1320v43h43l53-53v-43h-43L2353,1320z M2348,1412v-43h43l58,58v43h-43L2348,1412z M2183,1247v-43h43l121,121v43h-43L2183,1247z M211,654h43v-43l-53-53h-43v43L211,654z
+						M104,547h43v-43l-53-53H51v43L104,547z M196,552h-43v-43l58-58h43v43L196,552z M31,717h-43v-43l121-121h43v43L31,717z M1974,193v43h43l53-53v-43h-43L1974,193z M2081,86v43h43l53-53V33h-43L2081,86z 
+						M2076,178v-43h43l58,58v43h-43L2076,178z M1911,13v-43h43l121,121v43h-43L1911,13z M-61,173h43v-43l-53-53h-43v43L-61,173z M-168,66h43V23l-53-53h-43v43L-168,66z M-76,71h-43V28l58-58h43v43L-76,71z 
+						M-241,236h-43v-43l121-121h43v43L-241,236z M1653,173h43v-43l-53-53h-43v43L1653,173z M1546,66h43V23l-53-53h-43v43L1546,66z M1638,71h-43V28l58-58h43v43L1638,71z M1473,236h-43v-43l121-121h43v43L1473,236z
+						M691,173h43v-43l-53-53h-43v43L691,173z M584,66h43V23l-53-53h-43v43L584,66z M676,71h-43V28l58-58h43v43L676,71z M512,236h-43l-1-43L589,72h43v43L512,236z M191,13v-43h-43L95,23v43h43L191,13z 
+						M84,120V77H41l-53,53v43h43L84,120z M89,28v43H46l-58-58v-43h43L89,28z M254,193v43h-43L90,115V72h43L254,193z M1905,13v-43h-43l-53,53v43h43L1905,13z M1798,120V77h-43l-53,53v43h43L1798,120z 
+						M1803,28v43h-43l-58-58v-43h43L1803,28z M1968,193v43h-43l-121-121V72h43L1968,193z M1264,33h-43v43l53,53h43V86L1264,33z M1371,140h-43v43l53,53h43v-43L1371,140z M1279,135h43v43l-58,58h-43v-43L1279,135z 
+						M1444-30h43v43l-121,121h-43V91L1444-30z M303,33h-43v43l53,53h43V86L303,33z M410,140h-43v43l53,53h43v-43L410,140z M318,135h43v43l-58,58h-43v-43L318,135z M483-30h43v43L405,134h-43V91L483-30z 
+						M-178,514h-43v43l53,53h43v-43L-178,514z M-71,621h-43v43l53,53h43v-43L-71,621z M-163,616h43v43l-58,58h-43v-43L-163,616z M2,451h43v43L-76,615h-43v-43L2,451z M211,242h43v43l-53,53h-43v-43L211,242z 
+						M104,349h43v43l-53,53H51v-43L104,349z M196,344h-43v43l58,58h43v-43L196,344z M31,179h-43v43l121,121h43v-43L31,179z M943,13v-43h-43l-53,53v43h43L943,13z M836,120V77h-43l-53,53v43h43L836,120z 
+						M841,28v43h-43l-58-58v-43h43L841,28z M1006,193v43h-43L842,115V72h43L1006,193z M1172,33h43v43l-53,53h-43V86L1172,33z M1065,140h43v43l-53,53h-43v-43L1065,140z M1157,135h-43v43l58,58h43v-43L1157,135z 
+						M992-30h-43v43l121,121h43V91L992-30z M2226,654h-43v-43l53-53h43v43L2226,654z M2333,547h-43v-43l53-53h43v43L2333,547z M2241,552h43v-43l-58-58h-43v43L2241,552z M2406,717h43v-43l-121-121h-43v43L2406,717z
+						M2615,514h43v43l-53,53h-43v-43L2615,514z M2508,621h43v43l-53,53h-43v-43L2508,621z M2600,616h-43v43l58,58h43v-43L2600,616z M2435,451h-43v43l121,121h43v-43L2435,451z M2226,242h-43v43l53,53h43v-43L2226,242z
+						M2333,349h-43v43l53,53h43v-43L2333,349z M2241,344h43v43l-58,58h-43v-43L2241,344z M2406,179h43v43l-121,121h-43v-43L2406,179z M2246,13v-43h43l53,53v43h-43L2246,13z M2353,120V77h43l53,53v43h-43L2353,120z 
+						M2348,28v43h43l58-58v-43h-43L2348,28z M2183,193v43h43l121-121V72h-43L2183,193z"/>
+					</svg>
+						<div id="project-carousel-container" class="slide-container row center-components slide-item js-scroll project-id">
+						<div id="project-screen-hider" class="display-none"></div>
+						<div id="project-main-container" class="project-mid-container">
+							
+							<!-- //////////////////////////////////////////////////////////////// -->
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/11qvWj2XolTrMe1LFKLWxu-hTYXX7VzNM/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/crossword.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">CROSSWORD PUZZLE</h2>
+													<h3 class="project-subtitle proj-lm-style">Java</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/crossword" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1ItkxgAY78dZSroV1_5rEgU8a-mKyyyq7/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												A Simple Crossword Puzzle made in Java with Eclipse IDE using custom Java Swing GUI components.<br>
+												The program pulls data from a local text file which it uses as it's dictionary, 
+												if you want to enter custom words and meanings then you can by editing this text file.<br><br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Hit Generate to create a new Crossword Puzzle.</li>
+													<li>The Cells in the Crossword Table only allow 1 letter input.</li>
+													<li>Hit Check to check if your answer is correct.</li>
+													<li>Select from either Across and Down lists to Highlight the Cells on the Table.</li>
+													<li>Hit the Add to Dictionary button to open a window that allows inputs for Word and Clue, and add these to the Dictionary.</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 11 or Newer</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Jar File</span><br>
+												<ol class="list-numbers">
+													<li>Download the Crossword Program from Github or the Download link (Crossword.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Crossword folder, double click the Crossword.jar file to run</li>
+												</ol>
+												<span class="bold">Using Eclipse</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Projects from File System</span></li>
+													<li>In <span class="bold">Import Source</span> select the Crossword folder path</li>
+													<li>Make sure the Crossword folder is selected, then hit <span class="bold">Finish</span></li>
+												</ol>
+												<span class="bold">Using Netbeans</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Import Project -> Eclipse Project</span></li>
+													<li>Select <span class="bold">Import Project ignoring Project Dependencies</span></li>
+													<li>Under <span class="bold">Project to Import</span> select the Crossword folder path</li>
+													<li>Under <span class="bold">Destination Folder</span> select a destination (i.e. Documents/NetbeansProjects) folder path</li>
+													<li>Then hit <span class="bold">Finish</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												At first I didn't feel this project was that ambitious, the logic and behaviour was simple enough and the design was straightforward, however I was mistaken.<br>
+												Implementing the list and its interaction on each other, pressing one item in one unfocuses the other, creating a custom style and repainting the object every time; it was rough to get the inconsistencies to work out with each other.<br>
+												Aside from that was the Table, I tested both implements of a Custom JTable and a array of TextFields, in the end I chose to use the custom JTable.<br>
+												I struggled a bit with coding the logic behind the Crossword generation, getting random words and making them fit; checking for boundaries and a decent amount of Index out of Bound errors. I felt the need to write down my working out to debug this.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1LG9LnBKgNOiwylWrgizH64tcG7Q9__fR/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/thorwell.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">THORWELL PROJECT</h2>
+													<h3 class="project-subtitle proj-lm-style">Java</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/thorwell-project" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1QhkKaPUS-yxj4xi7ZUBE4p8QqmaKfM7G/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												Thorwell Project is a 2D Arena Shooter game where players fire arrows at each other to gain score, defeating other players give them score and the player who has the highest score, after the timer reaches 0, wins the match.<br>
+												There are currently three levels: Forest, Ice and Sky; each with their own gimmick. (Although the Sky level works but has a bit of an oddity)
+												Aside from the base movement controls, players have the ability to dash, shoot, and wall jump.<br>
+												Dashing makes the player invulnerable and if they are hit by an arrow; they catch it and the arrow gets placed in the player's quiver.<br>
+												Shooting fire an arrow in the direction the player is facing, this game features 8 cardinal direction shooting allowing players to aim diagonally.<br>
+												Players can attach themselves to Walls and Jump off them inorder to gain height and provide more movement options to the game.<br>
+												Thorwell Project is a University Project built using Java and a modified version of Box2D in Netbeans.<br>
+												<br>
+												<span class="bold">How to Play:</span><br>
+												<ul class="list-bullet">
+													<li>Hold multiple directional keys to aim diagonally. (W & A to Aim Top Left)</li>
+													<li>Jump onto walls without touching the ground to Wall climb then hit Jump again to Wall Jump</li>
+												</ul>
+												<span class="bold">Player 1</span>
+												<ul class="list-bullet">
+													<li>W, A, S, D - For Basic Movement & Aiming</li>
+													<li>Spacebar - To Jump</li>
+													<li>Shift - Dash</li>
+													<li>G - To Shoot</li>
+												</ul>
+												<span class="bold">Player 2</span>
+												<ul class="list-bullet">
+													<li>&#8593;, &#8592;, &#8595;, &#8594; - For Basic Movement & Aiming</li>
+													<li>Numpad 0 - To Jump</li>
+													<li>Enter/Return - Dash</li>
+													<li>Numpad 4 - To Shoot</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 8 or Newer</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Jar File</span><br>
+												<ol class="list-numbers">
+													<li>Download the Thorwell Project from Github or the Download link (ThorwellProject.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Thorwell Project folder, double click the ThorwellProject.jar file to run</li>
+												</ol>
+												<span class="bold">Using Eclipse</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Projects from File System</span></li>
+													<li>In <span class="bold">Import Source</span> select the Thorwell Project folder path</li>
+													<li>Make sure the Thorwell Project folder is selected, then hit <span class="bold">Finish</span></li>
+												</ol>
+												<span class="bold">Using Netbeans</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Import Project -> Eclipse Project</span></li>
+													<li>Select <span class="bold">Import Project ignoring Project Dependencies</span></li>
+													<li>Under <span class="bold">Project to Import</span> select the Thorwell Project folder path</li>
+													<li>Under <span class="bold">Destination Folder</span> select a destination (i.e. Documents/NetbeansProjects) folder path</li>
+													<li>Then hit <span class="bold">Finish</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												I've ran into numerous complications when trying to edit the functionality of this game, most having to do with collision detecting when interacting with players.<br>
+												The Forest Level originally was suppose to have the "gimmick" of having passable floors, the player would be able to jump up through them or jump down from them however the interaction with the collisions, enabling and disabling the collisions between the player and the ground didn't work with the limitations of the simplified physics engine.<br>
+												The Sky Level had the gimmick of moving platforms, these platforms move side by side and players can ride them and move with them. The main issue was that two dynamic bodies interacting with each other is a tossup as to which collision should take precedence, this resulted in the player sinking through the platform or sliding off the edges. Although an "working" implementation was made, by setting the vertical linear velocity and the gravity to 0, there are still slight visible glitch.<br>
+												Next would be handling the Player inputs and behaviour, a lot of the times there were odd interactions when implementing the states, some of which would cause the player to move weirdly or dash for too long.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1KgUCbPtSWDwRnqhMpoC2olu2BGu4RLev/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/transform.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style"><span style="font-size:1.7rem">TRANSFORM PROGRAM</span></h2>
+													<h3 class="project-subtitle proj-lm-style">Java</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/transform-program" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1Tc6QLStZCaFve_V30ibAA_iqomKSB2Tg/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												A Transformation Program that takes a set of input/coordinates (x,y) and performs transformations on them: flip, rotate, translate.<br>
+												I originally created this in Command Line to help create SVG elements, hence why this program doesn't omit letters from the final results, then I developed an GUI around it to make it more intuitive.<br>
+												<br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Input accepts alphanumeric values which are space separated. i.e. (A 1,2 3,4 Z or 1,2 3,4)</li>
+													<li>Select from the Drop down list at the top to switch between: Flip, Rotate, and Translate.</li>
+													<li>On Flip: Enter a value in the Mirror Line and select between Horizontal and Vertical.</li>
+													<li>On Rotate: Enter a Origin Point for X and Y values and the rotation (in degrees).</li>
+													<li>On Translate: Enter a translate for X and Y values.</li>
+													<li>Press Calculate to generate the transformed output.</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 11 or Newer</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Jar File</span><br>
+												<ol class="list-numbers">
+													<li>Download the Transform Program from Github or the Download link (TransformProgram.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Transform Program folder, double click the TransformProgram.jar file to run</li>
+												</ol>
+												<span class="bold">Using Eclipse</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Projects from File System</span></li>
+													<li>In <span class="bold">Import Source</span> select the Transform Program folder path</li>
+													<li>Make sure the Transform Program folder is selected, then hit <span class="bold">Finish</span></li>
+												</ol>
+												<span class="bold">Using Netbeans</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Import Project -> Eclipse Project</span></li>
+													<li>Select <span class="bold">Import Project ignoring Project Dependencies</span></li>
+													<li>Under <span class="bold">Project to Import</span> select the Transform Program folder path</li>
+													<li>Under <span class="bold">Destination Folder</span> select a destination (i.e. Documents/NetbeansProjects) folder path</li>
+													<li>Then hit <span class="bold">Finish</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												This program came about when I was experimenting with SVG animations on my Website, I created a shape in Photoshop and wanted to get the co-ordinates of the values when I symmetrize the shape.<br>
+												Additionally I had changed this to a GUI Program from Command Line to make it usable and added the additional Rotate and Translate options as extras.<br>
+												Overall this program turned out well, the most trouble this project gave me was figuring out the rotation formula giving scientific notation results.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1ZBrNhidHGA0bAhg8FwSqrCoXtR0mebzf/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/asteroids.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">ASTEROIDS</h2>
+													<h3 class="project-subtitle proj-lm-style">C++ (OpenGL)</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/thorwell-project" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1Z2zLbuod4VqEkytwDjYrDYPBj9WMx5VT/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												Asteroids is a C++ OpenGL game which is a reflection on the classic Retro game, here we go through a series of levels with increasing difficulty destroy asteroids and enemy ships to get score get as much score as you can within a single run.
+												You can also gather pickups that'll spawn randomly on the map for an extra boost.
+												<br>
+												<br>
+												<span class="bold">How to Play:</span><br>
+												<ul class="list-bullet">
+													<li>&#8593;, &#8592;, &#8595;, &#8594; - For Basic Movement</li>
+													<li>Spacebar - To Shoot</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10 & Visual Studio 2019</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>.NET Framework 3.5</li>
+													<li>Windows 10 SDK 10.0.19014.0 - If Re-targeting project, re-target both Asteroids and Engine Projects</li>
+													<li>Desktop development with C++</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Executable File</span><br>
+												<ol class="list-numbers">
+													<li>Navigate to the BIN folder</li>
+													<li>Double click on the <span class="bold">Asteroids.exe</span> file to run</li>
+												</ol>
+												<span class="bold">Visual Studio</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open -> Project/Solution</span></li>
+													<li>Navigate to the Asteroids folder <span class="bold">VC -> Asteroids</span> select the <span class="bold">Asteroids.sln</span></li>
+													<li>Then hit <span class="bold">Open</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												From what I remember programming the AI for the enemy ships was difficult, I wanted to implement a system where it'd only attack within a certain range and constantly chase the player the main difficult part was rotating the ship when it was too far away, 
+												deciding which the shortest turn direction was a nightmare to implement correctly.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1LKIT6OjRIKR-lBhmg397Ztxk1MTlAQb_/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/garits.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+										<div class="project-title-left">
+											<div class="project-title-container">
+												<h2 class="project-title proj-lm-style">GARITS</h2>
+												<h3 class="project-subtitle proj-lm-style">Java (Maven)</h3>
+											</div>
+										</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/Garits-System" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/drive/folders/1Kj8rc35MxiqskfxQbTRoyhZmIdMSkZeg?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												The acronym stands for Garage IT System, the system tracks and records the repair of vehicles in a garage, the inventory of replacement parts and the transaction between customers and the company. (More in-depth requirements list in my Github)<br>
+												The information is stored on a MySQL server<br>
+												Garits was a Team Project during University with 2 other developers.<br>
+												<br>
+												<span class="bold">How to Use:</span><br>
+												First you need to login to the service<br>
+												The Cells in the Crossword Table only allow 1 letter input.<br>
+												Hit Solve to check if your answer is correct.<br>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 11 or Newer</li>
+													<li>Maven</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Netbeans</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Import Project -> Eclipse Project</span></li>
+													<li>Select <span class="bold">Import Project ignoring Project Dependencies</span></li>
+													<li>Under <span class="bold">Project to Import</span> select the Crossword folder path</li>
+													<li>Under <span class="bold">Destination Folder</span> select a destination (i.e. Documents/NetbeansProjects) folder path</li>
+													<li>Then hit <span class="bold">Finish</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												Although this project is functional, I would've liked to further develop the GUI elements. Currently it uses a basic Java Look and Feel with no coating and no additional designs.<br>
+												As long as it works it's fine is what I think, Quality of Life changes can come later after basic functionality is met, in this case we were lacking in time.<br>
+												It also reminds me of how poor Netbeans 8 was at functioning, there'd be a few locks from time to time, well at least the newer Apache Netbeans feels and functions better.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1iOVwkt5Ms_nUoiKoqCEMVJr3InJRpk67/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/face-rec.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+										<div class="project-title-left">
+											<div class="project-title-container">
+												<h2 class="project-title proj-lm-style">FACIAL RECOGNITION</h2>
+												<h3 class="project-subtitle proj-lm-style">Python (MATLAB)</h3>
+											</div>
+										</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/face-recognition" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1ATMB5ndm1-OrWWCqzOblpbFmmQHz_8Tg/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												This was a University Project that involved creating a program, in MatLab, which ran through a dataset of student face images to, first, detect whether a face was recognised by the program, highlight the detected faces in bounding boxes, and finally determine the accuracy of the program deciding whether the faces matched any of the relevant student faces that the AI was trained on.<br>
+												<br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Run the FacialRecognition.m file</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Matlab</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Matlab</span><br>
+												<ol class="list-numbers">
+													<li>Download the FaceRecognition Program from Github or the Download link (FaceRecognition.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Open Matlab, and Open Project, navigate to the Face Recognition folder and open the files</li>
+													<li>Run the <span class="bold">FaceRecognition.m</span> program</li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												Simply a Python program in Matlab where a series of image patterning/modification was used to simplify and prepare processing the data for AI Training, turning the images to Grayscale helps out a lot.<br>
+												I made this program in my 3rd Year at university, there alongside the CNN program.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1RT4TL4NehANNQNVayjP5MlFwqGJiQzZC/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/cnn.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">CNN Program</h2>
+													<h3 class="project-subtitle proj-lm-style">Python (Jupyter Notebook)</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/cnn" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/drive/folders/1GETP65xBpzwU7bOCFk-vban2jopRZRBK?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												This CNN program trains and tests on the Quickdraw and Fashion MNISTs datasets, (that can be acquired free from their website), allowing the following activation functions: Sigmoid, Softmax, ReLU.<br>
+												The program first creates a training and testing set from the original .zip files, then the Neural Network is created in which you can specify the activation function.<br>
+												<br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Make sure you Run each individual code block from top to bottom. (To ensure some variables are initialised)</li>
+													<li>In the bottom code block, you can change the activation function by typing in either: 'sigmoid', 'softmax', 'relu'.</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Python 3</li>
+													<li>Jupyter Notebook</li>
+													<li>Matplotlib</li>
+													<li>Numpy</li>
+													<li>Pandas</li>
+													<li>Pickle</li>
+													<li>Scipy</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Installing Requirements</span><br>
+												<ol class="list-numbers">
+													<li>First download Python from their website: <a href="https://www.python.org/downloads/" target="_blank" class="link-text-style">here</a></li>
+													<li>Install Python and then run the command line by pressing <span class="bold">Win + R</span> to open Run and then typing <span class="bold">cmd</span></li>
+													<li>After enter <span class="bold">python –m pip install –upgrade pip</span> to update Pip</li>
+													<li>Enter <span class="bold">pip install notebook</span> to install Jupyter Notebook</li>
+													<li>Or you can download Anaconda and run Jupyter Notebook through an GUI app: <a href="https://www.anaconda.com/" target="_blank" class="link-text-style">here</a></li>
+													<li>Enter <span class="bold">pip install numpy</span> to install Numpy</li>
+												</ol>
+												<span class="bold">Jupyter Notebook from CMD Line</span><br>
+												<ol class="list-numbers">
+													<li>First of all make sure you have the pre-requisite files downloaded to run</li>
+													<li><span class="bold">Win + r</span> to open Run and then typing <span class="bold">cmd</span></li>
+													<li>Type <span class="bold">jupyter notebook</span> will open Jupyter Notebook in your Browser</li>
+													<li>Navigate to the project directory and then press on a <span class="bold">.ipynb</span> to open</li>
+													<li>Hit Run on all the Code Blocks</li>
+												</ol>
+												<span class="bold">Jupyter Notebook from Application</span><br>
+												<ol class="list-numbers">
+													<li>Open the Jupyter Notebook Application</li>
+													<li>Navigate to the project directory and then press on a <span class="bold">.ipynb</span> to open</li>
+													<li>Hit Run on all the Code Blocks</li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												The task was to implement a Convolutional Neural Network with simply Numpy, base Python libraries, and not any AI Frameworks/libraries like Keras or PyTorch, finding information on this topic was no easy task and more so the implementation of the Activation Formulae I had encounter a high amount of Overflow errors.<br>
+												That and packaging the datasets into a more compact usable format, in the end I used Pickle to change to get it this work.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1zuZFt-XYvRS-y-ihHqmaqKCKTRKKjIOx/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/twilight.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">MY FIRST WEBSITE</h2>
+													<h3 class="project-subtitle proj-lm-style">Web Development</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/my-first-website" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1Bq1nkaDJ1MZiD9rEmUHFt_xPetugCpEa/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												My First Webpage I created back in 2015 when I first started programming.<br>
+												The design is suppose to be an implementation of a company website with a forum attached to it.<br><br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Lacks any real functionality, this web page was more of a Proof of Concept with emphasis on design.</li>
+													<li>Has only HTML and CSS code, before I learnt Javascript.</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Google Chrome, Firefox, Internet Explorer, Microsoft Edge, and Opera on Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>None</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Browser</span><br>
+												<ol class="list-numbers">
+													<li>Download the Practice Webpage from Github or the Download link (Practice Webpage.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Practice Webpage folder, double click the <span class="bold">Homepage.html</span> file to run (Should open in your default Browser)</li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												My first Website, here I was looking to expand my knowledge on programming and HTML/CSS seemed like a good starting point. Since this project was conceived I still quite enjoy making webpages, the ability to style them and animate them gives you a lot of control to create creative designs.<br>
+												Websites have always been similar to a Sandbox where you can have fun creating new and interesting things. Looking back now and going through this code again, there are certainly things I could improve but also see how my design sense has changed.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/1se0zx3mcZjS_I53EE3pfZFFDBVdabyaZ/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/new-compendium.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">NEW COMPENDIUM</h2>
+													<h3 class="project-subtitle proj-lm-style">Web Development</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://www.google.co.uk/" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												<span class="bold">Ensure Browser Hardware Acceleration is On - This Website uses a Good Amount of Animations</span><br>
+												The Compendium serves as a archive for all the projects I've created and the techniques I've learnt during my time learning to program.<br>
+												This is an newer version of The Compendium that I created this year (2022); still incorporating the single-page design, the carousel (scroll) is vertical and can be triggered by the sidebar buttons or scroll wheel.<br>
+												Features a night mode button that changes the colours to be more appropriate on time of day, easily changeable.<br>
+												Project boxes popout while maintaining their original positions, has an collapsable box which can switch from the image of the project to a video on image press or video.<br>
+												About box Curtains that slide open to view contents with fade in and out images on mouse over.<br>
+												More complete Compendium that loads webpages with content through an iframe, topics are selectable through the sidebar after a programming language is selected.<br>
+												<br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Use the Navigation Bar on the left side to navigate between different slides, can also scroll wheel up and down.</li>
+													<li>When not popped out, press on the project box to pop it out. You can press on the download or github button without popping it out.</li>
+													<li>When popped out, you can press on the image or title bar to make the video visible.</li>
+													<li>Switch between the Description tabs to view the information.</li>
+													<li>Click on an About Tab to slide it open, mousing over specific Content Boxes will change the image of the Tab.</li>
+													<li>Press the open Tab again to close the tab.</li>
+													<li>Select on a Programming language in the Compendium will open out the content. Click on the side bar to view the material which loads the webpage to the iframe.</li>
+													<li>The buttons on the sidebar to the left respectively; brings up email, open up my github and linkedin profile and provides credit to the background creator. (if applicable)</li>
+													<li>For Compendium, select a programming language button (Java/C++) then select a topic in the sidebar.</li>
+												</ul>
+											
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Google Chrome, Firefox, Microsoft Edge, and Opera on Windows 10</span><br>
+												<span class="bold">Internet Explorer is not Supported</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 11 or Newer (Although no Java classes are used to avoid errors ensure this is installed)</li>
+													<li>Tomcat 9.0.68 or Web Server Alternatives (Small amount of code requires same-origin support which can only be viewed when ran on a server)</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Browser</span><br>
+												<ol class="list-numbers">
+													<li>Download the Compendium website from Github or the Download link (Compendium.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Compendium folder, double click the <span class="bold">index.html</span> file to run (Should open in your default Browser)</li>
+												</ol>
+												<span class="bold">Using Eclipse</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Projects from File System</span></li>
+													<li>In <span class="bold">Import Source</span> select the compendium folder path</li>
+													<li>Make sure the compendium folder is selected, then hit <span class="bold">Finish</span></li>
+													<li>If you have a Server configured you can hit Run to run it on the Server, otherwise open the <span class="bold">index.html</span> in a Browser</li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												A lot of Blood and Sweat went into making this Website. Probably is my most complete website, thinking back on it now probably the most times I've searched how to position an div in the center.<br>
+												But sure is great seeing the things you create come alive and work the way you want it to, all the struggles were worthwhile. I would like to in the future, save the project stuff to a database and dynamically load these by injecting the code to HTML using JavaScript, also create filtering with the Project boxes.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/10ASTNm1cPImTsABQbDpHoNVCestj9NOO/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/old-compendium.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">COMPENDIUM (OLD)</h2>
+													<h3 class="project-subtitle proj-lm-style">Web Development</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/compendium-old" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1DMzu1A5Rw6QSV8uq5DcTug06jTLU-igh/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												<span class="bold">Incomplete - This Project is Incomplete and a New Version is Available</span><br>
+												The Compendium serves as a archive for all the projects I've created and the techniques I've learnt during my time learning to program.<br>
+												This is an older version of Compendium, featuring a horizontal carousel, popout project boxes and an attempt to create an all-in-one/single-page website.<br><br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>Use the Navigation Bar at the bottom to navigate between different slides.</li>
+													<li>Hover over a project box to get some info, then press on the expand arrow button to pop out the project box for additional information.</li>
+													<li>For Compendium, select a programming language button (Java/C++) then select a topic in the sidebar.</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 11 or Newer (Although no Java classes are used to avoid errors ensure this is installed)</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Browser</span><br>
+												<ol class="list-numbers">
+													<li>Download the Compendium website from Github or the Download link (Compendium.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the Compendium folder, double click the index.html file to run (Should open in your default Browser)</li>
+												</ol>
+												<span class="bold">Using Eclipse</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Projects from File System</span></li>
+													<li>In <span class="bold">Import Source</span> select the compendium folder path</li>
+													<li>Make sure the compendium folder is selected, then hit <span class="bold">Finish</span></li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												This implementation was rough, I wanted to create the same style of Pop out boxes that Netflix has when you click on a video thumbnail. In my attempt it had worked enough that it does pop open and close however the navigation bar was still interactable due to the nature of z-index and positioning of objects in the DOM.<br>
+												It also seems I have a obsessive need to have large High-Definition backgrounds be part of websites, which constitutes most of the weight of the project.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-box-container">
+									<div class="project-box colourable project-id">
+										<div class="project-video-container">
+											<iframe class="project-video" src="https://drive.google.com/file/d/14SxCBulMkzKPfbZYkf1-rskh3G-WB7oP/preview?enablejsapi=1&controls=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<div style="background-image: url(imgs/shortest-path.png)" class="project-image proj-lm-style center-components"></div>
+										
+										<div class="project-title-bar project-id colourable">
+											<div class="project-title-left">
+												<div class="project-title-container">
+													<h2 class="project-title proj-lm-style">SHORTEST PATH</h2>
+													<h3 class="project-subtitle proj-lm-style">Java</h3>
+												</div>
+											</div>
+											<div class="project-title-right">
+												<div class="project-title-right-container">
+													<a href="https://github.com/RemnantEcho/shortest-path" target="_blank" class="project-tile-github project-dl-btn"></a>
+													<a href="https://drive.google.com/file/d/1liRqboUyMQbftd0wI2jw1JIxoawX42KT/view?usp=sharing" target="_blank" class="project-tile-download project-dl-btn"></a>
+													<a class="project-tile-expand project-dl-btn">
+														<svg viewBox="0 0 50 50" class="project-collapse-btn">
+														  <path class="project-collapse-line"  d="m10,18 l15,14 l15,-14" style="fill:none;stroke:#fff;stroke-width:4"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="project-desc-container colourable project-id">
+											<div class="tab-bar ">
+												<button class="desc-tab desc-main-tab">Info</button>
+												<button class="desc-tab desc-setup-tab">Setup</button>
+												<button class="desc-tab desc-thoughts-tab">Thoughts</button>
+											</div>
+											<div class="desc-tab-content desc-main desc-text">
+												This program uses Djikstra's Algorithm to calculate the Shortest path and is made with Java in Netbeans running in Command Line.<br><br>
+												<span class="bold">How to Use:</span><br>
+												<ul class="list-bullet">
+													<li>When opening the program you will be prompted to initialise the Graph. The accepted input follows; 'StartNode EndNode Weight' of which is separated using spaces.
+													i.e. (1 2 5) where it starts at 1 and ends at 2 with a weight of 5.</li>
+													<li>To finish initialising the graph simply type 'S'; case sensitive.</li>
+													<li>Then you have another three options:</li>
+													<li>'A' followed by an input for Adding another edge to the graph. i.e. (A 1 3 4)</li>
+													<li>'D' followed by a start and end input to delete and existing edge. i.e. (D 1 3)</li>
+													<li>'Q' followed by a start and end input to calculate the shortest path length. i.e. (Q 1 4)</li>
+												</ul>
+											</div>
+											<div class="desc-tab-content desc-setup desc-text">
+												<span class="bold">Tested using Windows 10</span><br>
+												<span class="bold">Requirements:</span><br>
+												<ul class="list-bullet">
+													<li>Java JDK 8 or Newer</li>
+												</ul>
+
+												<span class="bold">Instructions: </span><br>
+												<span class="bold">Using Bat File</span><br>
+												<ol class="list-numbers">
+													<li>Download the ShortestPath Program from Github or the Download link (ShortestPath.zip)</li>
+													<li>Extract the files using Winzip or another file archiver software</li>
+													<li>Within the ShortestPath folder, double click the <span class="bold">run.bat</span> file to run</li>
+												</ol>
+												<span class="bold">Using Netbeans</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open Project</span></li>
+													<li>Select the Project folder from directory where you had extracted it</li>
+													<li>Hit <span class="bold">Open Project</span></li>
+													<li>In the Project Sidebar <span class="bold">ShortestPath -> Source Packages -> shortestpath -> ShortestPath.java</span></li>
+													<li>Open the .java class and hit <span class="bold">Run</span> or <span class="bold">F6</span></li>
+												</ol>
+												<span class="bold">Using IntelliJ</span><br>
+												<ol class="list-numbers">
+													<li><span class="bold">File -> Open</span></li>
+													<li>Select the Project folder from directory where you had extracted it</li>
+													<li>Hit <span class="bold">Okay</span></li>
+													<li>Agree to allow IntelliJ access</li>
+													<li>Make sure your JDK is configured in IntelliJ</li>
+												</ol>
+											</div>
+											<div class="desc-tab-content desc-thoughts desc-text">
+												Not much too this than this calculates the Shortest Path using Djiskstra's Algorithm, I would have liked to be able to implement a variety of Shortest Path Algorithms like A*, and the notation of what nodes are passed through to achieve the shortest value.<br>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							<!-- //////////////////////////////////////////////////////////////// -->
+							
+							</div>
+						</div>
+					</div>
+					
+					<!-- About Carousel -->
+					<div id="about-carousel" class="carousel-slides colourable">
+						<div id="about-carousel-bg" class="bg-id colourable"></div>
+						<div id="about-carousel-container" class="slide-container row center-components slide-item js-scroll about-id">
+						
+						<!-- //////////////////////////////////////////////////////////////// -->
+						
+							<div id="" class="about-tab-container center-components row">
+								<div id="education-tab" class="about-tab education-tab">
+									<div class="education-tab-bg bg-img"></div>
+									<div id="education-title" class="tab-title text-style">EDUCATION</div>
+									<svg id="education-tab-curtain" class="tab-curtain" preserveAspectRatio="xMidYMid slice" viewBox="0 0 460 1440">
+										<path id="education-curtain-bot" class="curtain-bot colourable edu-curtain-bot" d="M0,1700 460,1700 460,1068 230,892 0,1068Z"></path>
+										<path id="education-curtain-top" class="curtain-top colourable edu-curtain-top" d="M0,0 0,1131 230,1307 460,1131 460,0Z"></path>
+									</svg>
+								</div>
+								<div id="education-content-container" class="about-content">
+									<div id="" class="about-content-box text-style colourable about-edu-box edu-default">
+										<h2 class="about-content-title">City, University of London</h2>
+										<h3 class="about-content-subtitle">2017 - 2021</h3>
+										<p class="about-content-text">Computer Science with Games Technologies</p>
+										<div class="about-content-text">
+											<ul>
+												<li>Advanced Algorithms and Data Structure</li>
+												<li>Agents and Multi-agent Systems</li>
+												<li>Games Development</li>
+											</ul>
+										</div>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-edu-box edu-default">
+										<h2 class="about-content-title">Newham Sixth Form College</h2>
+										<h3 class="about-content-subtitle">2015 - 2017</h3>
+										<p class="about-content-text">BTEC - Level 3 Computer Science with Games Technology</p>
+										<div class="about-content-text">
+											<ul>
+												<li>Functional Programming</li>
+												<li>Object Oriented Programming</li>
+												<li>Java Programming</li>
+											</ul>
+										</div>
+										<p class="about-content-text">Level 3 Mathematical Studies (Core Maths)</p>
+									</div>
+								</div>
+							</div>
+							
+							<div id="" class="about-tab-container center-components row">
+								<div id="hobbies-tab" class="about-tab hobbies-tab">
+									<div class="hobbies-tab-bg bg-img"></div>
+									<div id="hobbies-title" class="tab-title text-style">HOBBIES</div>
+									<svg id="education-tab-curtain" class="tab-curtain" preserveAspectRatio="xMidYMid slice" viewBox="0 0 460 1440">
+										<path id="hobbies-curtain-bot" class="curtain-bot colourable hob-curtain-bot" d="M0,1700 460,1700 460,1068 230,892 0,1068Z"></path>
+										<path id="hobbies-curtain-top" class="curtain-top colourable hob-curtain-top" d="M0,0 0,1131 230,1307 460,1131 460,0Z"></path>
+									</svg>								
+								</div>
+								<div id="hobbies-content-container" class="about-content">
+									<div id="" class="about-content-box text-style colourable about-hob-box hob-games">
+										<h2 class="about-content-title">Games</h2>
+										<h3 class="about-content-subtitle">An Assortment</h3>
+										<p class="about-content-text">Video games and board games of all the like, I've found myself enjoy games which you can play collectively with other people. 
+											Work collectively towards a common goal or having some friendly rivalry.<br>
+											My first few Video games were HOMM2 a classic turn-based strategy game and Cultures: 8th Wonder of the World; so I have a bit of a soft spot for these strategy games.<br>
+											In terms of video games then Souls-like games, single-player narratives and strategy games are my go to's, while board games like Red Dragon Inn and party games is always good fun.
+										</p>
+										
+										
+									</div>
+									<div id="" class="about-content-box text-style colourable about-hob-box hob-anime">
+										<h2 class="about-content-title">Anime</h2>
+										<h3 class="about-content-subtitle">Action, Mystery, Supernatural, Slice of Life, Military</h3>
+										<p class="about-content-text">Like video games I've enjoyed a decent roster of Anime; but ultimately found myself entertained by fast-paced action scenes/animation, a good mystery detective 'whodunnit' or a crime drama.<br>
+											Supernatural, ayakashi, or folklore/mythological based stories, slice of life for when you want to go on a feels trip and a good case of two strategists on either sides of a war facing off against eachother.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-hob-box hob-piano">
+										<h2 class="about-content-title">Piano</h2>
+										<h3 class="about-content-subtitle">Yamaha PSR-E373</h3>
+										<p class="about-content-text">I've been wanting to learn an instrument for sometime now, and settled on the piano. One for it's simplicity, and two since I'm experienced in using a computer keyboard from my early years.<br>
+											So far I've learnt to play Für Elise, My Favourite Things, Uptown Girl, and currently am learning the Main Theme of Interstellar.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-hob-box hob-jp">
+										<h2 class="about-content-title">Learning Japanese</h2>
+										<h3 class="about-content-subtitle">Lingodeer & WaniKani</h3>
+										<p class="about-content-text">Learning Japanese was something I found myself doing naturally as I've familiarised myself by watching anime, reading manga and some light novels.<br>
+											From the courses I've tried out I found myself using Wanikani for Kanji (Chinese characters) and Lingodeer for regular phrases, spelling, and pronunciation.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div id="" class="about-tab-container center-components row">
+								<div id="experience-tab" class="about-tab experience-tab">
+									<div class="experience-tab-bg bg-img"></div>
+									<div id="experience-title" class="tab-title text-style">EXPERIENCE</div>	
+									<svg id="education-tab-curtain" class="tab-curtain" preserveAspectRatio="xMidYMid slice" viewBox="0 0 460 1440">
+										<path id="experience-curtain-bot" class="curtain-bot colourable exp-curtain-bot" d="M0,1700 460,1700 460,1068 230,892 0,1068Z"></path>
+										<path id="experience-curtain-top" class="curtain-top colourable exp-curtain-top" d="M0,0 0,1131 230,1307 460,1131 460,0Z"></path>
+									</svg>								
+								</div>
+								<div id="experience-content-container" class="about-content">
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Anime & Manga Society</h2>
+										<h3 class="about-content-subtitle">2017 - 2021</h3>
+										<p class="about-content-text">
+											One of the societies I joined in University. As one would expect, this was a gathering of people who enjoy anime and manga alike, 
+											most of the group activities were quizzes such as which Anime a OST belonged to or the opening to which Anime, and doing Watch Parties.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Computer Games Society</h2>
+										<h3 class="about-content-subtitle">2017 - 2021</h3>
+										<p class="about-content-text">
+											Another University Society, that rather than make Video games it was a gathering of people who like to enjoy such games. We'd spend time playing a variety of different games against other people, some of which are Super Smash Bros Ultimate, Mario Kart 8 and Tekken 7. There were also times where we played Werewolf.<br>
+											I'd bring my Switch so we can have extra Controllers to play games and I'd help setting up the Game Consoles and storing them when we were done for the night.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Hack Day</h2>
+										<h3 class="about-content-subtitle">2017</h3>
+										<p class="about-content-text">
+											Hack Day was a 12 hour, shorter, version of Hackathon, where you make a program within the set time limit and show it off; essentially. This was still in my first Year of University and I wanted to get the impression of how these events are when they are run.<br>
+											The program I was creating was a 2D Top-Down RPG, having freshly started University and having the most experience using Java, having created a 2D Sidescroller for a past project in Java I went for another shot with that I knew at hand.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Code Club</h2>
+										<h3 class="about-content-subtitle">2016 - 2017</h3>
+										<p class="about-content-text">
+											My 2nd Year at Newvic, someone among my peers wanted to create a club that teaches people how to program and I volunteered to help out. There were a few starting Programming Languages such as Python and Unreal Engine 4 with programming a robot being quite popular, because who doesn't like robots.<br>
+											What I taught was Unreal Engine 4, mainly the Visual Programming side. I'll be frank, what I knew was limited and I was still learning UE4 as I was teaching.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Barking Road Community Centre</h2>
+										<h3 class="about-content-subtitle">2015 - 4 Weeks</h3>
+										<p class="about-content-text">
+											This was part of the Work Experience program that was compulsary during my 1st Year at Newham Sixth Form, the business was essentially a analog room booking system that had face-to-face or over-the-phone reservations be made through while sifting through a rather hefty Appointment Book to see if there are any conflicts with time and write down reservations when they go through.<br>
+											On the side I helped out solving a Printer issue, which boiled down to setting up drivers for the computers and creating Posters and Tickets for a Christmas Party that were going to host using a Graphics editing freeware known as Canva.
+										</p>
+									</div>
+									<div id="" class="about-content-box text-style colourable about-exp-box exp-default">
+										<h2 class="about-content-title">Wikia Editor</h2>
+										<h3 class="about-content-subtitle">Varies</h3>
+										<p class="about-content-text">
+											I used to help out editing Wikias, or now known as Fandoms. The most notable was Warframe, at the time the game had recently entered Open Beta, I'd play the game rather regularly and I'd refer to the Wikia for some information, but there are times where there's information lacking which I knew, having experienced the game, and decided to do some anonymous editing.<br>
+											After which I thought maybe there's more things missing which I can help out. Eventually leading me in creating a account called RemnantEcho, started performing some Wiki editing, commenting, and template creating.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<!-- //////////////////////////////////////////////////////////////// -->
+							
+						</div>
+					</div>
+					
+					<!-- Comp Carousel -->
+					<div id="comp-carousel" class="carousel-slides colourable">
+						<div id="comp-carousel-bg" class="bg-id colourable"></div>
+						<div id="comp-carousel-container" class="slide-container column center-components slide-item js-scroll comp-id">
+							<div id="comp-screen-hider"></div>
+							<div id="comp-category-container" class="comp-category-container">
+								<div id="comp-list-left-btn" class="comp-list-scroll-btn">
+									<svg id="" preserveAspectRatio="none" viewBox="0 0 112 80">
+										<path fill-rule="evenodd" clip-rule="evenodd" fill="none" class="comp-scroll-shape colourable comp-id" d="M40,0h72v80H40L0,40L40,0z"/>
+									</svg>
+								</div>
+								<ul class="comp-category-list">
+									<li id="comp-java-btn" class="comp-category-btn"></li>
+									<li id="comp-webdev-btn" class="comp-category-btn"></li>
+									<li id="comp-cplusplus-btn" class="comp-category-btn"></li>
+									<li id="comp-ue4-btn" class="comp-category-btn"></li>
+									<li id="comp-python-btn" class="comp-category-btn"></li>
+									<li id="comp-unity-btn" class="comp-category-btn"></li>
+								</ul>
+								<div id="comp-list-right-btn" class="comp-list-scroll-btn">
+									<svg id="" preserveAspectRatio="none" viewBox="0 0 112 80">
+										<path fill-rule="evenodd" clip-rule="evenodd" fill="none" class="comp-scroll-shape colourable comp-id" d="M72,80H0V0h72l40,40L72,80z"/>
+									</svg>
+								</div>
+							</div>
+							
+							<div id="" class="comp-tab-container colourable">
+							
+								<div id="comp-sidebar-container" class="comp-sidebar-container colourable display-none">
+									<div id="comp-sidebar-java" class="comp-sidebar-java comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="java-intro" class="comp-sidebar-tab java-tab colourable">Introduction</li>
+<!-- 											<li id="java-gui-intro" class="comp-sidebar-tab java-tab colourable">Swing GUI</li> -->
+<!-- 											<li id="java-custom-button" class="comp-sidebar-tab java-tab colourable">Custom Button</li> -->
+											<li></li>
+										</ul>
+									</div>
+									
+									<div id="comp-sidebar-webdev" class="comp-sidebar-webdev comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="webdev-intro" class="comp-sidebar-tab webdev-tab colourable">Introduction</li>
+<!-- 											<li class="comp-sidebar-tab webdev-tab colourable"></li> -->
+<!-- 											<li class="comp-sidebar-tab webdev-tab colourable"></li> -->
+											<li></li>
+										</ul>
+									</div>
+									
+									<div id="comp-sidebar-cplusplus" class="comp-sidebar-cplusplus comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="cplusplus-intro" class="comp-sidebar-tab cplusplus-tab colourable">Introduction</li>
+<!-- 											<li class="comp-sidebar-tab cplusplus-tab colourable"></li> -->
+<!-- 											<li class="comp-sidebar-tab cplusplus-tab colourable"></li> -->
+											<li></li>
+										</ul>
+									</div>
+									
+									<div id="comp-sidebar-ue4" class="comp-sidebar-ue4 comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="ue4-intro" class="comp-sidebar-tab ue4-tab colourable">Introduction</li>
+<!-- 											<li class="comp-sidebar-tab ue4-tab colourable"></li> -->
+<!-- 											<li class="comp-sidebar-tab ue4-tab colourable"></li> -->
+											<li></li>
+										</ul>
+									</div>
+									<div id="comp-sidebar-python" class="comp-sidebar-python comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="python-intro" class="comp-sidebar-tab python-tab colourable">Introduction</li>
+<!-- 											<li class="comp-sidebar-tab python-tab colourable"></li> -->
+<!-- 											<li class="comp-sidebar-tab python-tab colourable"></li> -->
+											<li></li>
+										</ul>
+									</div>
+									
+									<div id="comp-sidebar-unity" class="comp-sidebar-unity comp-sidebar display-none">
+										<ul class="comp-sidebar-list">
+											<li id="unity-intro" class="comp-sidebar-tab unity-tab colourable">Introduction</li>
+<!-- 											<li class="comp-sidebar-tab unity-tab colourable"></li> -->
+<!-- 											<li class="comp-sidebar-tab unity-tab colourable"></li> -->
+											<li></li>
+										</ul>
+									</div>
+									
+								</div>
+								<div id="comp-maincontent" class="comp-maincontent">
+									<iframe id="comp-iframe" src="comp-pages/start.html" class="comp-content-iframe colourable"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- stylesheets -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./../css/comp.css">
+
+		<style>
+
+		</style>
+
+		<!-- scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./../js/comp.js"></script>
+
+		<title>Website</title>
+	</head>
+	<body>
+		<div id="content" class="content">
+			<div class="content-box 0">
+				<h1 class="content-title">Introduction</h1>
+				<p>Java is an incredibly popular programming language, developed by Sun Microsystems in 1995. The syntax for this language has taken inspiration from other languages like C and C++.</p>
+				<p>Currently Java is being used for a variety of different uses (not limited to the ones listed below), and has great cross platform support:</p>
+				<ul class="list-bullet">
+					<li>Mobile Applications</li>
+					<li>Desktop Applications</li>
+					<li>Database Connections Support (MySQL, MongoDB, Oracle)</li>
+					<li>Web and Web Server Applications</li>
+					<li>Games (using Physics Engines like JBox2d)</li>
+				</ul>
+			</div>
+			<div class="content-box 1">
+				<h1 class="content-title">Installation</h1>
+				<p>First of all, ensure you have a relevant version of Java JDK installed, the latest version would be fine. Since Java has continuity in which Newer Java versions can run program compiled through older Java versions.<br>
+				However not vice versa, an Java program compiled in a later version can not run on a JDK version earlier to the compiler.</p>
+				<p>You can find the latest version of Java on the Oracle Website here:</p>
+				<ul class="list-bullet">
+					<li><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" class="">Java Download</a></li>
+				</ul>
+				<p>Do note if you are trying to download older versions of Java from the main Website you need to login to a Oracle Account.</p>
+				<p>There are plenty of IDEs that Java can be programmed in, the ones of note are:</p>
+				<ul class="list-bullet">
+					<li><a href="https://www.jetbrains.com/idea/download/" target="_blank" class="">IntelliJ</a></li>
+					<li><a href="https://www.eclipse.org/downloads/" target="_blank" class="">Eclipse</a></li>
+					<li><a href="https://netbeans.apache.org/download/index.html" target="_blank" class="">Netbeans</a></li>
+				</ul>
+				<p>Personally I use Eclipse for any programming that requires Java, it's lightweight and has a good marketplace for plugins. Albeit IntelliJ is the ideal IDE for Java and is incredibly popular as a Industry Standard and has better code completion and base features.
+					Netbeans would be last for me in terms of IDE's for Java, the previous versions before being revamped with Apache was far more clunky than the other two options, they have at least improved since.</p>
+			</div>
+			<div class="content-box 2">
+				<h1 class="content-title">Structure</h1>
+				<p>Java is a Object-Oriented Programming languages which consist of .class files. You want to make sure that the class file opens with class, the name of the class file and open and close curly brackets. Class files start with a Constructor a public declaration of the class, when importing other class files you'll need to declare and initialise this constructor to create that object.
+				</p>
+				<br>
+				<div class="code-block">
+					<p><span class="purple">public class</span> <span class="yellow">Car</span> {</p>
+						<p class="indent-1"><span class="purple">public</span> <span class="blue">Car</span>() {</p>
+						<br>
+						<p class="indent-1">}</p>
+					<p>}</p>
+				</div>
+				<br>
+				<p>Take this Car class:<br>
+				<ul class="list-bullet">
+					<li><span class="code purple">public</span> - Is a Access Modifier that tells the compiler the what the other classes have access to.</li>
+					<li><span class="code purple">class</span> - Is the class definition.</li>
+					<li><span class="code yellow">Car</span> - Is the class name, which needs to begin with a Capital Letter.</li>
+				</ul>
+				<p>Following it is the set of <span class="code gray">{}</span> and whatever is inside it will have the same access rights to other functions and variables inside the same class.
+				</p>
+					<div class="code-block">
+						<p><span class="purple">public static</span> <span class="yellow">void</span> <span class="blue">main</span>(<span class="yellow">String</span>[] args) {</p>
+							<br>
+						<p>}</p>
+					</div>
+				<br>
+				<p>Make sure that you include this function in your main starting class, the JVM Compiler is going to look for this function at the very start and execute whatever code is inside, I like to add the <span class="code"><span class="purple">new</span> <span class="yellow">constructor_name</span></span> statement to create a instance of the current class and have the statements inside the constructor, like so:</p>
+				<br>
+				<div class="code-block">
+					<p><span class="purple">public class</span> <span class="yellow">Car</span> {</p>
+						<p class="indent-1"><span class="purple">public</span> <span class="blue">Car</span>() {</p>
+						<p class="indent-2 comment">// Insert Statements here</p>
+						<p class="indent-1">}</p>
+					<br>
+					<p class="indent-1"><span class="purple">public static</span> <span class="yellow">void</span> <span class="blue">main</span>(<span class="yellow">String</span>[] args) {</p>
+							<p class="indent-2"><span class="purple">new</span> <span class="yellow">Car</span>();</p>
+					<p class="indent-1">}</p>
+					<p>}</p>
+				</div>
+				<br>
+				<p>The <span class="code"><span class="purple">new</span> <span class="yellow">Car</span>();</span> is a method call statement, in Java statements must be closed off with a <span class="code">;</span>.</p>
+				<p>Method calling involves calling another method/function within another code block and execute whatever code is inside the called function. Functions could also have Arguments/Parameters, with these you'll need to pass the values when calling that particular function, these parameters have a data type that must have a matching data type to successfully pass through.</p>
+				<br>
+				<div class="code-block">
+					<p><span class="purple">public class</span> <span class="yellow">Car</span> {</p>
+						<p class="indent-1 comment">// Global Variable</p>
+						<p class="indent-1"><span class="yellow">int</span> topSpeed;</p>
+						<br>
+						<p class="indent-1 comment">// Constructor Method</p>
+						<p class="indent-1"><span class="purple">public</span> <span class="blue">Car</span>(<span class="yellow">int</span> topSpeed) {</p>
+							<p class="indent-2"><span class="red">this</span>.topSpeed = topSpeed;</p>
+						<p class="indent-1">}</p>
+					<br>
+					<p class="indent-1 comment">// Setter Method</p>
+					<p class="indent-1"><span class="purple">public</span> <span class="yellow">void</span> <span class="blue">setTopSpeed</span>(<span class="yellow">int</span> topSpeed) {</p>
+							<p class="indent-2"><span class="red">this</span>.topSpeed = topSpeed;</p>
+					<p class="indent-1">}</p>
+					<br>
+					<p class="indent-1 comment">// Getter Method</p>
+					<p class="indent-1"><span class="purple">public</span> <span class="yellow">int</span> <span class="blue">getTopSpeed</span>() {</p>
+							<p class="indent-2"><span class="purple">return</span> topSpeed;</p>
+					<p class="indent-1">}</p>
+					<br>
+					<p class="indent-1 comment">// JVM Start Method</p>
+					<p class="indent-1"><span class="purple">public static</span> <span class="yellow">void</span> <span class="blue">main</span>(<span class="yellow">String</span>[] args) {</p>
+						<p class="indent-2"><span class="purple">new</span> <span class="yellow">Car</span>(180);</p>
+					<p class="indent-1">}</p>
+					<p>}</p>
+				</div>
+				<br>
+				<p>Look at this newly implemented Car Class, the constructor <span class="code"><span class="purple">public</span> <span class="blue">Car</span>(<span class="yellow">int</span> topSpeed)</span> now has a <span class="code yellow">int</span> parameter called <span class="code">topSpeed</span>.</p>
+				<p>In our constructor Method call <span class="code"><span class="purple">new</span> <span class="yellow">Car</span>(180);</span> we have the value <span class="code">180</span> as the <span class="code yellow">int</span> value being passed to the constructor method.
+				In which the constructor then uses the passed value <span class="code">topSpeed</span> and initialises the global variable <span class="code"><span class="yellow">int</span> topSpeed;</span> through this statement <span class="code"><span class="red">this</span>.topSpeed = topSpeed;</span> setting the new value of <span class="code">topSpeed</span> to <span class="code">180</span>.<br>
+				You only need to use <span class="code purple">new</span> for declaring an new instance of a class for other method calls you simply type something like: <span class="code"><span class="blue">setTopSpeed</span>(180);</span>.
+				</p>
+				<p></p>
+			</div>
+
+		</div>
+		<div id="toc-bar" class="toc-bar toc-bar-lm">
+			<ul id="toc-list" class="toc-list"></ul>
+		</div>
+
+		<script>
+
+		</script>
+	</body>
+</html>

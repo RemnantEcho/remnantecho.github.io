@@ -1,0 +1,175 @@
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+html, body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	font-size: 1.4225vw;
+}
+
+.content::-webkit-scrollbar {
+	display: none;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 85%;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow: hidden;
+	overflow-y: scroll;
+	transition: color .8s;
+	float: left;
+}
+
+.content-box {
+	min-height: 10rem;
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+	font-size: 1.0rem;
+}
+
+.content-title {
+	font-size: 2.0rem;
+}
+
+.indent-1 {
+	padding-left: 1.5rem;
+}
+
+.indent-2 {
+	padding-left: 3.0rem;
+}
+
+.indent-3 {
+	padding-left: 4.5rem;
+}
+
+.code-block {
+	background-color: #282c34;
+	margin: auto;
+ 	width: 60%;
+ 	height: auto;
+ 	padding: 1.5rem 2.5rem;
+ 	color: #abb2bf;
+ 	font-family: Consolas, "courier new";
+ 	font-size: 0.8rem;
+}
+
+.code-block p {
+	margin: 0;
+}
+
+.code {
+	background-color: #282c34;
+	color: #abb2bf;
+	font-size: 0.8rem;
+	font-family: Consolas, "courier new";
+	padding: .15rem .3rem;
+}
+
+.toc-bar {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 15%;
+}
+
+.toc-list {
+	list-style: none;
+	margin: 0;
+	padding: 1rem;
+	direction: rtl;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.toc-item {
+	transition: color .8s, font-size .8s;
+/* 	transition: font-size .8s; */
+	text-align: right;
+	font-size: 0.8rem;
+}
+
+.toc-item:hover {
+	cursor: pointer;
+}
+
+.toc-item-active-lm {
+	color: #ffd162;
+	font-size: 1.5rem;
+}
+
+.toc-item-active-dm {
+	color: #de5f00;
+	font-size: 1.5rem;
+}
+
+.text-lm {
+	color: #000;
+}
+
+.text-dm {
+	color: #fff;
+}
+
+.toc-list-lm {
+	border-right: 3px solid #ffd162;
+}
+
+.toc-list-dm {
+	border-right: 3px solid #de5f00;
+}
+
+.comp-dm-style {
+	background-color: #de5f00;
+}
+
+.comp-lm-style {
+	background-color: #ffd162;
+}
+
+.gray {
+	color: #abb2bf;
+}
+
+.purple {
+	color: #bf75d6;
+}
+
+.blue {
+	color: #61afef;
+}
+
+.red {
+	color: #e06c75;
+}
+
+.green {
+	color: #98c379;
+}
+
+.yellow {
+	color: #e0bc79;
+}
+
+.orange {
+	color: #ca9564;
+}
+
+.comment {
+	color: #5c6370;
+}
