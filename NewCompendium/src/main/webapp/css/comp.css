@@ -173,3 +173,7 @@ html, body {
 .comment {
 	color: #5c6370;
 }
+
+.mute-ani {
+	transition: none;
+}
