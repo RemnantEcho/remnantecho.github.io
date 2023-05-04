@@ -19,6 +19,7 @@ html, body {
 		width: 100vh;
 		transform: rotate(90deg) translate(0, -100vw);
     	transform-origin: top left;
+    	font-size: 0.625vh;
 	}
 }
 
@@ -181,10 +182,16 @@ button:focus {
 
 .mid-container {
 	height: 3.515625rem;
-	width: 30.0rem;
+	width: 100%;
+	white-space: nowrap;
 	/* background-color: #bbb; */
 	/* margin: 17.5% 0 17.5% 0; */
 	/*z-index: -2;*/
+}
+
+.mid-bar-container {
+	position: relative;
+	left: 50%;
 }
 
 #mid-bar {
@@ -193,19 +200,19 @@ button:focus {
 	background-color: #fff;
 	position: absolute;
 	z-index: 0;
-	left: 3.6123046875rem;
+/* 	left: 3.6123046875rem; */
 	margin: 2rem 0 2rem 0;
-	/* transform: translate(0, 50%); */ /* padding-top: 2rem; */
+	transform: translate(-50%, 0);
 }
 
 .diamond-center {
+	display: inline-block;
 	height: 100%;
-	width: 7.599609375rem;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	/* padding-top: 25%; */ /* z-index: 0; */
 	/* margin-bottom: 50%; */ /* margin: 50% 0 50% 0; */
-	display: inline-block;
 	text-align: center; /* margin: 0 50% 0 50%; */
 	/*z-index: -1;*/
 }
@@ -224,11 +231,11 @@ button:focus {
 }
 
 .diamond-expand {
-	width: 25rem;
+/* 	width: 25rem; */
 }
 
 .diamond-collapse {
-	width: 8.0rem;
+/* 	width: 8.0rem; */
 }
 
 .diamond-selected {
@@ -487,20 +494,22 @@ button:focus {
 }
 
 .bot-center {
+	display: inline-block;
 	height: 3.515625rem;
-	width: 7.599609375rem;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
-	display: inline-block;
 	text-align: center;
+	white-space: nowrap;
+	float: left;
 }
 
 .bot-icon-expand {
-	width: 30.0rem;
+/* 	width: 30.0rem; */
 }
 
 .bot-icon-collapse {
-	width: 7.599609375rem;
+/* 	width: 7.599609375rem; */
 }
 
 .sidebar-tooltip {
@@ -511,8 +520,15 @@ button:focus {
 	line-height: 2.5rem;
 	color: #fff;
 	font-weight: bold;
-	margin-left: 1.0rem;
+/* 	margin-left: 1.0rem; */
 	z-index: 10;
+}
+
+.triangle-container {
+	display: inline-block;
+	width: 1.25rem;
+	height: 2.5rem;
+	float: left;
 }
 
 .tooltip-container {
@@ -520,7 +536,7 @@ button:focus {
 	width: 0rem;
 	height: 100%;
 	display: inline-block;
-	margin-left: -2.0rem;
+	margin-left: -2.5rem;
 	padding: 0.5rem 0;
 	position: relative;
 	overflow: hidden;
@@ -551,15 +567,13 @@ button:focus {
 	width: 0.0rem;
 }
 
-
-
 .tooltip-triangle {
 	width: 0;
 	height: 0;
 	background-color: transparent;
 	/*z-index: 1;*/
 	position: absolute;
-	margin-left: -0.5rem;
+/* 	margin-left: -0.5rem; */
 	margin-top: 0.50390625rem;
 	transition: border .8s;
 }
@@ -578,6 +592,12 @@ button:focus {
 
 .tooltip-triangle-lm-comp {
 	border-right: 1.25rem solid #ffd162;
+}
+
+.tooltip-box {
+	display: inline-block;
+	height: 100%;
+	float: left;	
 }
 
 .tooltip-text { /* width: 10.0rem; */ /* margin: 0 auto; */
